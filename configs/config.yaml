@@ -1,0 +1,27 @@
+experiment:
+  name: "multilineage_ctcf_shift"
+  seed: 42
+  device: "cuda"
+
+data:
+  window_size: 500
+  batch_size: 128
+  num_workers: 4
+  splits:
+    train: ["chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7", "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14", "chr15", "chr16"]
+    val: ["chr17", "chr18"]
+    test: ["chr21", "chr22"]
+
+model:
+  type: "transformer" # options: "cnn", "transformer"
+  d_model: 128
+  nhead: 4
+  num_layers: 2
+  dim_feedforward: 256
+  dropout: 0.2
+
+training:
+  epochs: 8
+  learning_rate: 0.0005
+  weight_decay: 0.001
+  checkpoint_dir: "checkpoints"
