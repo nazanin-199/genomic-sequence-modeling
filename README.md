@@ -28,7 +28,7 @@ Evaluated across **137,895** unified regulatory intervals ($500\text{ bp}$) stan
 * **Constitutive Sites ($[1, 1]$):** $42,318$ loci occupied in both K562 (`ENCSR000EGM`) and HepG2 (`ENCSR000BIE`) within $\le 150\text{ bp}$ summit distance.
 * **K562-Specific Sites ($[1, 0]$):** $12,133$ loci occupied in K562 with $>1,000\text{ bp}$ clearance from any HepG2 peak.
 * **HepG2-Specific Sites ($[0, 1]$):** $14,506$ loci occupied in HepG2 with $>1,000\text{ bp}$ clearance from any K562 peak.
-* **GC-Matched Background ($[0, 0]$):** $68,938$ non-regulatory loci sampled per-chromosome with a $>2,000\text{ bp}$ clearance buffer from any CTCF peak in either cell type (Mean $\text{GC}_{\text{pos}} = 49.13\%$, Mean $\text{GC}_{\text{neg}} = 49.09\%$).
+* **GC-Matched Background ($[0, 0]$):** $68,938$ non-regulatory loci sampled per-chromosome with a >2,000 bp clearance buffer from any CTCF peak in either cell type (Mean $GC_{pos} = 49.13\%$, Mean $GC_{neg} = 49.09\%$).
 
 ### Partition Scheme & Homology Audit
 * **Train:** `chr1`–`chr16` ($N = 113,595$)
