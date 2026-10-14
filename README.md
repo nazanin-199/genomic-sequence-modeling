@@ -32,7 +32,7 @@ Evaluated across **137,895** unified regulatory intervals ($500\text{ bp}$) stan
 
 | Model Architecture | Parameters | Macro AUROC | Macro AUPRC | Differential Plasticity AUROC | Key Limitation / Failure Mode |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Baseline 0:** Dinucleotide LR | 20 | 0.5587 | 0.4370 | 0.5012 | Zero predictive utility under GC matching ($\Delta\text{GC} = 0.04\%) |
+| **Baseline 0:** Dinucleotide LR | 20 | 0.5587 | 0.4370 | 0.5012 | Zero predictive utility under GC matching ($\Delta$ GC = 0.04\%) |
 | **Baseline 2:** Canonical k-mer LR (k \le 5) | 680 | 0.6245 | 0.4780 | 0.5310 | Bag-of-k-mers cannot preserve 19 bp spatial alignment |
 | **Baseline 1:** JASPAR Multi-PWM Scan | 0 | 0.8330 | 0.7781 | 0.6487 | Fixed linear motifs; blind to non-linear spatial cooperativity |
 | **Model 1:** Multi-Task 1D CNN | ~230K | 0.9061 | 0.8513 | 0.6207 | Receptive field limited by fixed pooling strides |
